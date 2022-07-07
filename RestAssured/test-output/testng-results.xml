@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1226" started-at="2022-07-07T11:09:10Z" finished-at="2022-07-07T11:09:12Z">
+  <suite started-at="2022-07-07T20:00:06 IST" name="Default suite" finished-at="2022-07-07T20:00:10 IST" duration-ms="3002">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@4b952a2d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@53ce1329]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="1226" started-at="2022-07-07T11:09:10Z" finished-at="2022-07-07T11:09:12Z">
+    <test started-at="2022-07-07T20:00:06 IST" name="Default test" finished-at="2022-07-07T20:00:10 IST" duration-ms="3002">
       <class name="com.TestRunner.TestRunner">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.TestRunner.TestRunner@4b952a2d]" name="setUpClass" is-config="true" duration-ms="289" started-at="2022-07-07T16:39:10Z" finished-at="2022-07-07T16:39:11Z">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.TestRunner.TestRunner@53ce1329]" started-at="2022-07-07T20:00:07 IST" name="setUpClass" finished-at="2022-07-07T20:00:07 IST" duration-ms="302" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@172ca72b]]>
+                <![CDATA[org.testng.TestRunner@45843650]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@4b952a2d]" name="runScenario" duration-ms="906" started-at="2022-07-07T16:39:11Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-07T16:39:12Z">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@53ce1329]" started-at="2022-07-07T20:00:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-07T20:00:09 IST" duration-ms="2644" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,69 +34,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.util.ServiceConfigurationError">
-            <message>
-              <![CDATA[com.fasterxml.jackson.databind.Module: Provider com.fasterxml.jackson.datatype.jdk8.Jdk8Module not found]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.util.ServiceConfigurationError: com.fasterxml.jackson.databind.Module: Provider com.fasterxml.jackson.datatype.jdk8.Jdk8Module not found
-	at java.util.ServiceLoader.fail(ServiceLoader.java:239)
-	at java.util.ServiceLoader.access$300(ServiceLoader.java:185)
-	at java.util.ServiceLoader$LazyIterator.nextService(ServiceLoader.java:372)
-	at java.util.ServiceLoader$LazyIterator.next(ServiceLoader.java:404)
-	at java.util.ServiceLoader$1.next(ServiceLoader.java:480)
-	at com.fasterxml.jackson.databind.ObjectMapper.findModules(ObjectMapper.java:1081)
-	at com.fasterxml.jackson.databind.ObjectMapper.findModules(ObjectMapper.java:1065)
-	at com.fasterxml.jackson.databind.ObjectMapper.findAndRegisterModules(ObjectMapper.java:1115)
-	at io.restassured.path.json.mapper.factory.DefaultJackson2ObjectMapperFactory.create(DefaultJackson2ObjectMapperFactory.java:29)
-	at io.restassured.path.json.mapper.factory.DefaultJackson2ObjectMapperFactory.create(DefaultJackson2ObjectMapperFactory.java:27)
-	at io.restassured.common.mapper.factory.ObjectMapperFactory$create.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:46)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
-	at io.restassured.internal.mapping.Jackson2Mapper.createJackson2ObjectMapper(Jackson2Mapper.groovy:44)
-	at io.restassured.internal.mapping.Jackson2Mapper.this$2$createJackson2ObjectMapper(Jackson2Mapper.groovy)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
-	at io.restassured.internal.mapping.Jackson2Mapper.serialize(Jackson2Mapper.groovy:50)
-	at io.restassured.internal.mapping.Jackson2Mapper.serialize(Jackson2Mapper.groovy)
-	at io.restassured.mapper.ObjectMapper$serialize.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:46)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-	at io.restassured.internal.mapping.ObjectMapping.serializeWithJackson2(ObjectMapping.groovy:217)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
-	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce.invoke(StaticMetaMethodSite.java:153)
-	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:102)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:54)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
-	at io.restassured.internal.mapping.ObjectMapping.serialize(ObjectMapping.groovy:154)
-	at io.restassured.internal.mapping.ObjectMapping$serialize.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:46)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at io.restassured.internal.RequestSpecificationImpl.body(RequestSpecificationImpl.groovy:756)
-	at StepDefenition.StepDef.post_the_request(StepDef.java:58)
-	at ✽.Post the request(file:///C:/Project/Phoneix/AutomationFramework/RestAssured/src/main/java/com/FeatureFiles/samplePost.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.util.ServiceConfigurationError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.TestRunner.TestRunner@4b952a2d]" name="tearDownClass" is-config="true" duration-ms="10" started-at="2022-07-07T16:39:12Z" finished-at="2022-07-07T16:39:12Z">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.TestRunner.TestRunner@53ce1329]" started-at="2022-07-07T20:00:09 IST" name="tearDownClass" finished-at="2022-07-07T20:00:09 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

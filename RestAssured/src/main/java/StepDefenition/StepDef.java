@@ -50,7 +50,7 @@ public class StepDef {
 	   
 		req.headers(touristheaader);
 		System.out.println("header is added");
-FileReader readr =new FileReader("C:/Project/Phoneix/AutomationFramework/AutomationFramework/SampleFw/cucurbits/RestAssuredProject/JsonFiles/tourist.json");
+FileReader readr =new FileReader("C:\\Users\\Administrator\\Desktop\\Project\\RestAssured\\RestAssured\\JsonFiles\\Tourist.json");
 JSONParser jpa= new JSONParser();
 System.out.println("File is readed");
 		obj=jpa.parse(readr);
@@ -67,7 +67,7 @@ System.out.println("File is readed");
 			
 		 
 			System.out.println(res.statusCode());
-			System.out.println(jp.get("tourist_name"));
+			//System.out.println(jp.get("tourist_name"));
 			System.out.println(res.asString());
 	}
 }
