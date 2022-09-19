@@ -154,7 +154,7 @@
             <version>2.22.2</version>
             <configuration>
                 <includes>
-			<exclude> </exclude>
+			<exclude>**/Testrunner.java </exclude>
                </includes>
             </configuration>
         </plugin>
