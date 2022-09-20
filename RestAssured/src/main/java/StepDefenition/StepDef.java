@@ -50,7 +50,7 @@ public class StepDef {
 	   
 		req.headers(touristheaader);
 		System.out.println("header is added");
-FileReader readr =new FileReader("C:\\Users\\Administrator\\Desktop\\Project\\RestAssured\\RestAssured\\JsonFiles\\Tourist.json");
+FileReader readr =new FileReader("C://Vignesh//Learning//RestAssured//RestAssured//RestAssured//JsonFiles//Tourist.json");
 JSONParser jpa= new JSONParser();
 System.out.println("File is readed");
 		obj=jpa.parse(readr);
